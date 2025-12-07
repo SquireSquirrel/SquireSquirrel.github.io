@@ -1,70 +1,257 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
+    /* Styles for my portfolio website */
 
-.header{
-    width: 100%;
-    height: 100px;
-    display: block;
-    background-color: #151510;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
 
-.inner_header{
-    width: 70%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    background-color: #000030;
-}
 
-.myname{
-    height: 100%;
-    display: table;
-    float: left;
-    padding-left: 20px;
-}
 
-.myname h1{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: fantasy;
-    font-size: 32px;
-    font-weight: 500;
-    opacity: 80%;
-}
+    /* START OF HEADER SECTION */
+    .header{
+        width: 100%;
+        height: 100px;
+        display: block;
+        background-color: #101010;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    }
 
-.myname h1 span{
-    display: block;
-    font-weight: 1000;
-}
+    .inner_header{
+        width: 70%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
 
-.navigation{
-    float: right;
-    height: 100%;
-}
+    .myname{
+        height: 100%;
+        display: table;
+        float: left;
+        padding-left: 20px;
+    }
 
-.navigation a{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
+    .myname h1{
+        color: white;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: fantasy;
+        font-size: 32px;
+        font-weight: 500;
+        opacity: 80%;
+    }
 
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: white;
-    opacity: 80%;
-    font-family: fantasy;
-    font-size: 20px;
-}
+    .myname h1 span{
+        display: block;
+        font-weight: 1000;
+    }
 
-body {
-    background-image: url("MediaFolder/SiteImages/website-background.jpg");
-}
+    .navigation{
+        float: right;
+        height: 100%;
+    }
+
+    .navigation a{
+        height: 100%;
+        display: table;
+        float: left;
+        padding: 0px 20px;
+    }
+
+    .navigation a li{
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        color: white;
+        opacity: 80%;
+        font-family: fantasy;
+        font-size: 20px;
+    }
+    /* END OF HEADER SECTION */
+
+    .site_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    /* START OF HOME SECTION */
+    .home{
+        width: 60%;
+        height: 400px;
+        margin-top: 150px;
+        background-color: #DDDDDD;
+        opacity: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home_picture{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #CCCCCC;
+        box-sizing: border-box;
+    }
+
+    .home_picture h1{
+        font-family: fantasy;
+        font-size: 40px;
+        color: black;
+        font-weight: 300;
+    }
+
+    .home_picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .home_text{
+        width: 50%;
+        height: 75%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px;
+    }
+
+    .home_text p{
+        font-family: fantasy;
+        color: black;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+    }
+    /* END OF HOME SECTION */
+
+
+
+    /* START OF GAME SECTION */
+    .game_section{
+        width: 100%;
+        height: 2000px;
+        background-color: black;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .game_section_text{
+        width: 100%;
+        height: 150px;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game_section_text h1{
+        font-family: fantasy;
+        font-size: 80px;
+        color: white;
+        text-align: center;
+    }
+
+    .game_box{
+        width: 75%;
+        height: 300px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .game_logo_box{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game_logo_box img{
+        width: 50%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .general_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 85%;
+        width: 100%;
+    }
+
+    .game_info{
+        width: 35%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .game_trailer_box{
+        width: 100%;
+        height: 75%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game_trailer_box video{
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .game_info_text{
+        width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+
+    .game_info_text p{
+        font-family: fantasy;
+        font-weight: 100px;
+        font-size: 14px;
+        color: #CC0000;
+    }
+
+    .feature_box{
+        width: 55%;
+        height: 80%;
+        background-color: red;
+    }
+
+    body {
+        background-image: url("MediaFolder/SiteImages/website-background.jpg");
+    }
