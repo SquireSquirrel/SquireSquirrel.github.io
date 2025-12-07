@@ -12,12 +12,12 @@
     /* START OF HEADER SECTION */
     .header{
         width: 100%;
-        height: 100px;
+        height: 6.25rem;
         display: block;
         background-color: #101010;
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 0rem;
+        left: 0rem;
         z-index: 500;
     }
 
@@ -32,7 +32,7 @@
         height: 100%;
         display: table;
         float: left;
-        padding-left: 20px;
+        padding-left: 1.25rem;
     }
 
     .myname h1{
@@ -41,14 +41,14 @@
         display: table-cell;
         vertical-align: middle;
         font-family: fantasy;
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 500;
         opacity: 80%;
     }
 
     .myname h1 span{
         display: block;
-        font-weight: 1000;
+        font-weight: 900;
     }
 
     .navigation{
@@ -60,7 +60,7 @@
         height: 100%;
         display: table;
         float: left;
-        padding: 0px 20px;
+        padding: 0rem 1.25rem;
     }
 
     .navigation a li{
@@ -70,7 +70,7 @@
         color: white;
         opacity: 80%;
         font-family: fantasy;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     /* END OF HEADER SECTION */
 
@@ -87,8 +87,8 @@
     /* START OF HOME SECTION */
     .home{
         width: 60%;
-        height: 400px;
-        margin-top: 150px;
+        height: 25rem;
+        margin-top: 9.375rem;
         background-color: #DDDDDD;
         opacity: 90%;
         display: flex;
@@ -102,14 +102,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding: 1.25rem;
         background-color: #CCCCCC;
         box-sizing: border-box;
     }
 
     .home_picture h1{
         font-family: fantasy;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: black;
         font-weight: 300;
     }
@@ -129,13 +129,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 30px 10px;
+        padding: 0.625rem 1.875rem 0.625rem;
     }
 
     .home_text p{
         font-family: fantasy;
         color: black;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 100;
         text-align: center;
     }
@@ -146,19 +146,19 @@
     /* START OF GAME SECTION */
     .game_section{
         width: 100%;
-        height: 2000px;
+        height: 125rem;
         background-color: black;
-        margin: 50px 0px;
+        margin: 3.125rem 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 50px;
+        padding: 3.125rem;
     }
 
     .game_section_text{
         width: 100%;
-        height: 150px;
+        height: 9.375rem;
         vertical-align: middle;
         display: flex;
         flex-direction: row;
@@ -168,20 +168,20 @@
 
     .game_section_text h1{
         font-family: fantasy;
-        font-size: 80px;
+        font-size: 5rem;
         color: white;
         text-align: center;
     }
 
     .game_box{
         width: 75%;
-        height: 300px;
+        height: 18.75rem;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0px;
+        padding: 0.625rem 0rem;
     }
 
     .game_logo_box{
@@ -241,8 +241,8 @@
 
     .game_info_text p{
         font-family: fantasy;
-        font-weight: 100px;
-        font-size: 14px;
+        font-weight: 6.25rem;
+        font-size: 0.875rem;
         color: #CC0000;
     }
 
