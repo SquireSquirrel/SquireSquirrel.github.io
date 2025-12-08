@@ -1,5 +1,5 @@
 function showDiv(divId) {
-    console.log("Button clicked:", divId); // test
+    console.log("Clicking button:", divId);
     // hide all divs
     const divs = document.querySelectorAll('.feature_choice');
     divs.forEach(div => div.style.display = 'none');
