@@ -106,7 +106,7 @@
                         </div>
 
                         <div id="BBSaving" class="feature_choice">
-                            <p style="color: bisque;">Every day saves your progress with characters including events completed, conversations had, and meals cooked.</p>
+                            <p style="color: bisque;">Your progress with characters including events completed, conversations had, and meals cooked are all saved as the end of each day.</p>
                             <img src="MediaFolder/GameMedia/BearlyBaking/Saving.png">
                         </div>
 
@@ -125,18 +125,92 @@
                             </video>
                         </div>
                         <div class="game_info_text">
-                            <p style="color: bisque;">Bearly Baking is a story-based cooking game where you bake tasty pastries for a wacky cast of critters. I primarily worked on systems programming for this project.</p>
+                            <p style="color: bisque;">Bearly Baking was my first Steam release and one my second group game project. I worked on systems programming for the majority of this project</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="game_box">
-                
+            <div class="game_box" style="background-color: #308030;">
+                <div class="game_logo_box">
+                    <h1 style="color: rgb(87, 44, 3);">Lazy Gnome Unit</h1>
+                </div>
+
+                <div class="general_info">
+
+                    <div class="game_info">
+                        <div class="game_trailer_box">
+                            <video controls>
+                                <source src="MediaFolder/GameMedia/LGU/LGUTrailer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="game_info_text">
+                            <p style="color: rgb(87, 44, 3);">This was my first group project as the sole programmer which allowed me to hone general Unity programming skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature_box">
+
+                        <div id="LGUCamera" class="feature_choice" style="display: flex;">
+                            <p style="color: rgb(87, 44, 3);"> The camera in this game moves freely around the map, is able to rotate, and zoom in so the player is able to get to any point on the map.</p>
+                            <img src="MediaFolder/GameMedia/LGU/Camera.png">
+                        </div>
+
+                        <div id="LGUCharacters" class="feature_choice">
+                            <p style="color: rgb(87, 44, 3);">Gnomes are controlled through the UI. Each platoon can be opened and gnomes selected as groups or individually.</p>
+                            <img src="MediaFolder/GameMedia/LGU/CharacterControls.png">
+                        </div>
+
+                        <div id="LGUAI" class="feature_choice">
+                            <p style="color: rgb(87, 44, 3);">All strategies and enemy AI are all different functions to have the squirrels attack the nuts and the gnomes attack squirrels.</p>
+                            <img src="MediaFolder/GameMedia/LGU/AI.png">
+                        </div>
+
+                        <div class="feature_buttons">
+                            <button onclick="showDiv('LGUCamera', ['LGUCharacters', 'LGUAI'])">Test</button>
+                            <button onclick="showDiv('LGUCharacters', ['LGUCamera', 'LGUAI'])">Test</button>
+                            <button onclick="showDiv('LGUAI', ['LGUCamera', 'LGUCharacters'])">Test</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="game_box">
-                
+            <div class="game_box" style="background-color: rgb(120, 120, 120);">
+                <div class="game_logo_box">
+                    <h1 style="color: rgb(75, 0, 75);">Sterile Coffin</h1>
+                </div>
+
+                <div class="general_info">
+
+                    <div class="feature_box">
+
+                        <div id="SCWeapon" class="feature_choice" style="display: flex;">
+                            <p style="color: rgb(75, 0, 75);">This weapon fires a basic laser projectile doing damage to any enemy it hits.</p>
+                            <img src="MediaFolder/GameMedia/SterileCoffin/Weapon.png">
+                        </div>
+
+                        <div id="SCUI" class="feature_choice">
+                            <p style="color: rgb(75, 0, 75);">The UI shows items such as the weapon, health, and cooldowns. </p>
+                            <img src="MediaFolder/GameMedia/SterileCoffin/UI.png">
+                        </div>
+
+                        <div class="feature_buttons">
+                            <button onclick="showDiv('SCWeapon', ['SCUI'])">Test</button>
+                            <button onclick="showDiv('SCUI', ['SCWeapon'])">Test</button>
+                        </div>
+                    </div>
+
+                    <div class="game_info">
+                        <div class="game_trailer_box">
+                            <video controller>
+                                <source src="MediaFolder/GameMedia/SterileCoffin/Trailer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="game_info_text">
+                            <p style="color: rgb(75, 0, 75);">My very first real project. I primarily worked on the UI and some of the weapons.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="game_box">

@@ -280,8 +280,8 @@
     }
 
     .feature_choice img{
-        width: 100%;
-        height: auto;
+        width: 30rem;
+        height: 45rem;
         object-fit: cover;
         display: block;
         object-position: center;
@@ -297,8 +297,8 @@
     }
 
     .feature_buttons button{
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
         background-image: url("MediaFolder/SiteImages/Button.png");
         background-size: contain;
         background-repeat: no-repeat;
