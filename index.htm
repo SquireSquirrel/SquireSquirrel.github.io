@@ -57,12 +57,24 @@
                         </div>
 
                         <div class="game_info_text">
-                            <p>My most recent work is on Bewitched, focusing primarily on enemy AI and combat gameplay.</p>
+                            <p style="color: #CC0000;">My most recent work is on Bewitched, focusing primarily on enemy AI and combat gameplay.</p>
                         </div>
                     </div>
 
                     <div class="feature_box">
-                        
+                        <div id="BewitchedNodeCost" class="feature_choice" style="display: flex">
+                            <p style="color: #CC0000;">This graph shows a custom pathfinding graph where each sphere represents an abstract point and the color represents the cost. This is what is used to direct enemies around each other and towards the player.</p>
+                            <img src="MediaFolder/GameMedia/BewitchedSS/NodeCostDemo.png">
+                        </div>
+
+                        <div id="BewitchedAttackSystem" class="feature_choice"></div>
+                        <div id="BewitchedAttacks" class="feature_choice"></div>
+
+                        <div class="feature_buttons">
+                            <button onclick="showDiv('BewitchedNodeCost')">Test</button>
+                            <button onclick="showDiv('BewitchedAttackSystem')">Test</button>
+                            <button onclick="showDiv('BewitchedAttacks')">Test</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,4 +97,5 @@
 
         </div>
     </div>
+    <script src="script.js"></script>
 </body>

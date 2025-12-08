@@ -146,7 +146,7 @@
     /* START OF GAME SECTION */
     .game_section{
         width: 100%;
-        height: 125rem;
+        height: 160rem;
         background-color: black;
         margin: 3.125rem 0rem;
         display: flex;
@@ -175,7 +175,7 @@
 
     .game_box{
         width: 75%;
-        height: 18.75rem;
+        height: 24rem;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -186,7 +186,7 @@
 
     .game_logo_box{
         width: 100%;
-        height: 15%;
+        height: 3.6rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -204,13 +204,13 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        height: 85%;
+        height: 20.4rem;
         width: 100%;
     }
 
     .game_info{
         width: 35%;
-        height: 80%;
+        height: 20.4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -219,7 +219,7 @@
 
     .game_trailer_box{
         width: 100%;
-        height: 75%;
+        height: 15.3rem;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -235,7 +235,7 @@
 
     .game_info_text{
         width: 100%;
-        height: 20%;
+        height: 4rem;
         text-align: center;
     }
 
@@ -243,13 +243,63 @@
         font-family: fantasy;
         font-weight: 6.25rem;
         font-size: 0.875rem;
-        color: #CC0000;
     }
 
     .feature_box{
         width: 55%;
-        height: 80%;
-        background-color: red;
+        height: 16.32rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    .feature_choice{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        gap: 1.25rem;
+    }
+
+    .feature_choice p{
+        width: 100%;
+        font-family: fantasy;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .feature_choice img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        object-position: center;
+    }
+
+    .feature_buttons{
+        width: 70%;
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .feature_buttons button{
+        width: 50%;
+        height: 50%;
+        background-image: url("MediaFolder/SiteImages/Button.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: black;
+        background-color: transparent;
+        color: transparent;
+        font-size: 0rem;
     }
 
     body {
