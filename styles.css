@@ -280,8 +280,8 @@
     }
 
     .feature_choice img{
-        width: 30rem;
-        height: 45rem;
+        width: 45rem;
+        height: 30rem;
         object-fit: cover;
         display: block;
         object-position: center;
@@ -307,6 +307,47 @@
         background-color: transparent;
         color: transparent;
         font-size: 0rem;
+    }
+
+    .mini_game_box{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem;
+    }
+
+    .mini_game_box h1{
+        flex: 1;
+        width: 100%;
+        font-family: fantasy;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mini_game_box img{
+        width: 15rem;
+        height: 10rem;
+        object-fit: cover;
+        display: block;
+        object-position: center;
+    }
+
+    .mini_game_box p{
+        flex: 1;
+        width: 100%;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     body {
