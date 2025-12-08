@@ -469,6 +469,15 @@
         width: 8rem;
         margin-right: 1rem;
     }
+    /* END OF CONTACT SECTION */
+
+    [id] {
+        scroll-margin-top: 6.25rem;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
 
     body {
         background-image: url("MediaFolder/SiteImages/website-background.jpg");
