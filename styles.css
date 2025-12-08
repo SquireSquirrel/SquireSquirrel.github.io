@@ -374,7 +374,7 @@
 
     .about_img_column img{
         width: 100%;
-        height: 100%;
+        height: 5rem;
         object-fit: cover;
     }
 
