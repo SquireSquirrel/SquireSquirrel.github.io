@@ -233,11 +233,16 @@
         align-items: center;
     }
 
-    .game_trailer_box video{
-        width: 90%;
+    .game_trailer_box img{
+        width: 100%;
         height: 100%;
         object-fit: contain;
-        display: block;
+    }
+
+    .game_trailer_box video{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .game_info_text{
