@@ -199,6 +199,13 @@
         object-fit: fill;
     }
 
+    .game_logo_box h1{
+        width: 100%;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 5rem;
+    }
+
     .general_info{
         display: flex;
         flex-direction: row;
