@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewitched</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <ul class="navigation">
+            <a href="https://SquireSquirrel.github.io" target="_blank"><li>Portfolio</li></a>
+        </ul>
+
+        <img src="../MediaFolder/GameMedia/BewitchedSS/BewitchedLogo.png">
+    </div>
+
+    <div class="container">
+
+        <div class="info_section">
+
+            <div class="intro_box">
+
+                <h1>About the Game</h1>
+                <p>Bewitched is a roguelike dungeon crawler based around possession and rhythm combat. You play as a witch with no offensive capabilities aside from being able to jump into your attacker's bodies. Battle your way through hoards of goblins, guards, ogres, and dryads to escape, leaving all who remain Bewitched.</p>
+                <p>I primarily focused on AI programmming for this project, ranging from enemy pathfinding functions and graphs to attack and movement states. I got to branch out and try my own methods of pathfinding throughout this project and am proud of the systems that were produced in the end.</p>
+
+            </div>
+
+            <div class="feature_box">
+
+                <div class="feature_info">
+                    <h1>Dynamic Cost Pathfinding</h1>
+                    <p>When thinking about how enemies should pathfind I focused on how they would surround the player without moving close to each other.</p>
+                    <p>Eventually I found a solution in having the enemies change information on the pathfinding graph itself by adding artificial costs in areas around them.</p>
+                    <p>This solution allowed for enemies to find "shorter" paths and destinations that are farther than the quickest path so long as they stay away from other enemies.</p>
+                </div>
+
+                <div class="feature_pictures">
+                    <img src="Media/DynamicNodeCode.png">
+                    <img src="Media/NodeCostDemo.png">
+                </div>
+
+            </div>
+
+            <div class="feature_box">
+
+                <div class="feature_pictures">
+                    <img src="Media/AttackingPriorityDemo.png">
+                    <img src="Media/AttackDecisionCode.png">
+                </div>
+
+                <div class="feature_info">
+                    <h1>Attack Decision Making</h1>
+                    <p>Now that the enemies have made their way to the player and can surround them, I thought about how enemies of different types and combinations would work together.</p>
+                    <p>I introduced enemy priorities that indicate which enemies are more aggressive, such as an ogre being more dominant than a goblin, as well as unique attack starting functions for each enemy that can initiate other attacks with enemies of the same type.</p>
+                    <p>Using enemy cooldowns and a minimum attack time I continuously check that it has been long enough, then I select the highest priority enemy that is able to attack and trigger it to do so.</p>
+                </div>
+
+            </div>
+
+            <div class="feature_box">
+
+                <div class="feature_info">
+                    <h1>Unique Enemies</h1>
+                    <p>Throughout the early weeks of the project the designers and I corresponded about how they should behave, their speed, and what abilities they would have. In biweekly meetings we would discuss attack designs and intended results, drawing or finding similar examples when needed.</p>
+                    <p>In addition to the AI for the enemies I implemented the Goblin, Guard, and Ogre abilities while ensuring it fit both the designers' goals and the overall goal of the game. Naturally I would also end up modifying aspects as requested by designers and playtesters for improving the game.</p>
+                    <p>This also includes aspects of the game such as the various types of hitboxes present and status effects such as stun, time slow, and a custom knockback system.</p>
+                </div>
+
+                <div class="feature_pictures">
+                    <img src="Media/AttackDemo.png">
+                    <img src="Media/AttackDecisionCode.png">
+                </div>
+
+            </div>
+
+            <div class="end_box">
+
+                <p>This project was special to me as I got to work on it from the very start. At first I programmed nearly every system for a basic top-down possession combat game. It was a little janky and had lots to improve but it went on to the next class and we gained a much larger team with 3 more programmers.</p>
+                <p>After that change I focused entirely on the enemy AI and enemy implementations. This as shown above required a lot of custom work to be done in attack selection, path navigation, as well as enemy movement as a whole, which had previously been covered with Unity's Navmesh which was no longer suitable for this.</p>
+                <p>My experience working on attacks in this game has allowed me to truly think about how other games program their attacks and how different genres require different actions to happen with each attack and how different attacks vary in effects too.</p>
+                <p>By far the greatest takeaway I had from this project was with customizing pathfinding and modifying search algorithms to prioritize certain actions over others. By adding costs of nodes I made A* no longer find an optimal path by standard margins. However it is only suboptimal in the way that it avoids enemies, so in the question of optimalizity in its context it finds the best possible action given the rules of how it can move.</p>
+                <p>I am excited to take this knowledge into practice by finding optimals paths for other variables than just distance, such as time.</p>
+                <p>The range of work I did on this project has me desiring more than anything to toy around with new AI pathfinding systems and new solo projects to toy with interesting game mechanics.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
